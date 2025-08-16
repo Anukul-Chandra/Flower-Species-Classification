@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Prediction</title>
+</head>
+<body>
+    <h1>Enter Iris Features:</h1>
+    <form method="POST" action="/predict">
+        <label for="SepalLengthCm">Sepal Length (cm):</label><br>
+        <input type="text" id="SepalLengthCm" name="sepal_length"><br><br>
+
+        <label for="SepalWidthCm">Sepal Width (cm):</label><br>
+        <input type="text" id="SepalWidthCm" name="sepal_width"><br><br>
+
+        <label for="PetalLengthCm">Petal Length (cm):</label><br>
+        <input type="text" id="PetalLengthCm" name="petal_length"><br><br>
+
+        <label for="PetalWidthCm">Petal Width (cm):</label><br>
+        <input type="text" id="PetalWidthCm" name="petal_width"><br><br>
+        class:{{ result }}<br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if result %}
+        <h2>Prediction Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
