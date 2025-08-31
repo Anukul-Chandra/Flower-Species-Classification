@@ -1,1 +1,8 @@
-Deployment Wesbite : https://flower-species-classification.onrender.com/
+
+# Live Demo
+
+The project is live at:  https://flower-species-classification.onrender.com/
+
+Note:
+It may take some time to load on first run, since a large file is downloaded automatically in the background.
+
